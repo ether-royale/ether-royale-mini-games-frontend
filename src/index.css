@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Teko', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+
+    color: white;
+}
+
+@font-face {
+  font-family: "Anton";
+  src: url("./fonts/Anton-Regular.ttf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("./fonts/teko-v10-latin-regular.woff2") format("opentype");
+  font-weight: normal;
+}
+
+

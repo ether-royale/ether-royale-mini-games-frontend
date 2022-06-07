@@ -1,0 +1,45 @@
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0 30rem;
+
+    padding-top: 5rem;
+    height: calc(100vh - 5rem);
+
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0) 100%); 
+
+    .game-header {
+        width: 5rem;
+
+        padding: 3rem;
+
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+
+        .game-header-item {
+            min-width: 7rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .item-value {
+                font-size: 2rem;
+                font-family: 'Anton';
+                font-style: bold;
+            }
+
+            .hearts {
+                line-height: 3rem;
+                color: rgb(228, 94, 94);
+            }
+        }
+    }
+
+    canvas {
+        border: 5px solid rgba(255, 255, 255, 0.075);
+    }
+}

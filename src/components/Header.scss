@@ -1,0 +1,35 @@
+header {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    padding: 1rem 0;
+    background-color: black;
+}
+
+.title {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Anton';
+
+    display: flex;
+    justify-content: center;
+    gap: .6rem;
+
+    color: white;
+
+    span {
+        color: #85c7de;
+    }
+}
+
+.sub-heading {
+    color: white;
+}

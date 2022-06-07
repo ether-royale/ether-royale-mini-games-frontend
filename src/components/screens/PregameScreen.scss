@@ -1,0 +1,47 @@
+.pregame-screen {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .game-title {
+        font-size: 5rem;
+        margin: 3rem;
+    }
+
+    .game-start-button {
+        height: 7rem;
+        width: 7rem;
+        color: #85c7de;
+        background-color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 3.5rem;
+        padding-left: .2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-shadow: 1px 1px 15px 1px rgba(255, 255, 255, 0.16);        
+    }
+
+    .game-description {
+        width: 50%;
+        margin: 4rem 0 1rem 0;
+        text-shadow: 0 0 4px rgba(133, 199, 222, 1);
+    }
+
+    .game-description-sub {
+        width: 50;
+        font-size: 1.3rem;
+        color: rgb(190, 190, 190);
+    }
+}

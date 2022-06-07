@@ -1,0 +1,31 @@
+.game-header-wanted {
+    align-items: center;
+
+    .timer {
+        padding-bottom: 1rem;
+        font-size: 4rem !important;
+        font-style: bold;
+        line-height: 3rem;
+    }
+
+    .hearts {
+        padding-bottom: 1rem;
+    }
+
+    .wanted-poster {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-size: cover;
+
+        .wanted-image-bg {
+            height: 13rem;
+        }
+
+        .wanted-image {
+            width: 5.5rem;
+            position: absolute;
+        }
+    }
+}
