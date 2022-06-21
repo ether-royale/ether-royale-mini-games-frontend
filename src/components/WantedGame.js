@@ -18,7 +18,7 @@ let images = []
 let timer = null
 
 const BACKGROUND_IMAGE = new Image()
-BACKGROUND_IMAGE.src = require('../images/wanted/background.png')
+BACKGROUND_IMAGE.src = require('../images/wanted/background.jpg')
 
 function WantedGame({ gameType, nftid, signature, setIsGameOver, setGameOverReason, setGameOverMessage }) {
     const MAX_TIME = 30
