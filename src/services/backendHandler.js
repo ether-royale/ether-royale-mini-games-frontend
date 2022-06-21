@@ -1,12 +1,14 @@
 import axios from 'axios'
 
+const backendURL = "https://minigames.api.etherroyale.io"
+
 export async function sendScore(gameType, nftId, signature, score) {
     const data = {}
     data.gameType = gameType
     data.nftId = nftId
     data.signature = signature
     data.score = score
-    axios.post(process.env.REACT_APP_API_URL + '/game', data)
+    axios.post(backendURL + '/game', data)
         .then(res => {
             
         })
@@ -17,16 +19,16 @@ export async function sendScore(gameType, nftId, signature, score) {
 }
 
 export async function getNFTData(nftId) {
-    const res = await axios.get(process.env.REACT_APP_API_URL + '/nft/' + nftId)
+    const res = await axios.get(backendURL + '/nft/' + nftId)
     return res.data
 }
 
 export async function isValidSignature(nftId, signature) {
-    const res = await axios.get(process.env.REACT_APP_API_URL + '/nft/' + nftId + '/validate/' + signature)
+    const res = await axios.get(backendURL + '/nft/' + nftId + '/validate/' + signature)
     return res.data.valid
 }
 
 export async function getActiveGameType() {
-    const res = await axios.get(process.env.REACT_APP_API_URL + '/game')
+    const res = await axios.get(backendURL + '/game')
     return res.data.gameType
 }
